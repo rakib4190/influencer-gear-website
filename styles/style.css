@@ -18,11 +18,9 @@ body {
 header {
     max-width: 1250px;
     margin: 0 auto;
-
 }
 
 nav {
-    /* border: 2px solid red; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -52,6 +50,54 @@ nav ul li a {
     color: var(--primary-color);
 }
 
+/* banner section styles */
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 70px;
+    margin-bottom: 50px;
+}
+
+.banner-content .section-title {
+    font-size: 3.25rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.banner-content .section-description {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+
+}
+
+.btn {
+    background-color: #E02C6D;
+    color: #fff;
+    border-radius: 41px;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 10px 24px;
+    border: none;
+    margin-top: 16px;
+
+}
+
+.banner-image {
+    width: 50%;
+    background-image: url('../images/Circle\ design.svg');
+    background-repeat: no-repeat;
+}
+
+.banner-image img {
+    width: 100%;
+}
+
+
+
+
+
 /* responsive for mobile device */
 @media screen and (max-width:576px) {
 
@@ -67,9 +113,25 @@ nav ul li a {
     nav ul li {
         margin-bottom: 15px;
     }
+
+    .banner-container {
+        flex-direction: column-reverse;
+
+    }
+
+    .banner-content {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .banner-container .banner-image {
+        width: 100%;
+        margin-top: 22px;
+        padding-bottom: 20px;
+    }
 }
 
-/* responsive for mobile device */
+/* responsive for tablet device */
 @media screen and (min-width:576px) and (max-width:800px) {
 
     nav {
@@ -78,5 +140,24 @@ nav ul li a {
 
     nav .nav-title {
         margin-bottom: 15px;
+    }
+
+    .banner-container {
+        flex-direction: column-reverse;
+    }
+
+    .banner-container .banner-image {
+        width: 90%;
+        margin: 0 auto;
+
+        margin-top: 20px;
+    }
+
+    .banner-content {
+        margin-left: 50px;
+    }
+
+    .banner-image img {
+        width: 100%;
     }
 }
