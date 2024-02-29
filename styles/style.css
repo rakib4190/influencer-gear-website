@@ -76,10 +76,13 @@ nav .fa-solid {
 
 }
 
+.btn-primary {
+    border-radius: 41px;
+}
+
 .btn {
     background-color: #E02C6D;
     color: #fff;
-    border-radius: 41px;
     font-size: 1rem;
     font-weight: 700;
     padding: 10px 24px;
@@ -195,7 +198,35 @@ main {
     font-weight: 500;
 }
 
+/* feature section style */
+.feature-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 150px;
+    padding-bottom: 120px;
+}
 
+.feature-image,
+.feature-content {
+    width: 50%;
+}
+
+.feature-image img {
+    width: 100%;
+}
+
+.feature-content h1 {
+    font-size: 38px;
+    font-weight: 700;
+    color: #0A0826;
+}
+
+.feature-content p {
+    font-size: 16px;
+    font-weight: 700;
+    color: #6C6C6C;
+}
 
 /* responsive for mobile device */
 @media screen and (max-width:576px) {
@@ -213,7 +244,8 @@ main {
         margin-bottom: 15px;
     }
 
-    .banner-container {
+    .banner-container,
+    .feature-container {
         flex-direction: column-reverse;
 
     }
@@ -243,43 +275,63 @@ main {
         padding-right: 20px;
     }
 
-    /* responsive for tablet device */
-    @media screen and (min-width:576px) and (max-width:800px) {
-
-        nav {
-            flex-direction: column;
-        }
-
-        nav .nav-title {
-            margin-bottom: 15px;
-        }
-
-        .banner-container {
-            flex-direction: column-reverse;
-        }
-
-        .banner-container .banner-image {
-            width: 90%;
-            margin: 0 auto;
-
-            margin-top: 20px;
-        }
-
-        .banner-content {
-            margin-left: 50px;
-        }
-
-        .banner-image img {
-            width: 100%;
-        }
-
-        .e-commerce-logo {
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        .collection-card {
-            grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
-        }
+    .feature-container {
+        gap: 50px;
     }
+
+    .feature-content,
+    .feature-image {
+        width: 100%;
+    }
+}
+
+/* responsive for tablet device */
+@media screen and (min-width:576px) and (max-width:800px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav .nav-title {
+        margin-bottom: 15px;
+    }
+
+    .banner-container {
+        flex-direction: column-reverse;
+    }
+
+    .banner-container .banner-image {
+        width: 90%;
+        margin: 0 auto;
+
+        margin-top: 20px;
+    }
+
+    .banner-content {
+        margin-left: 50px;
+    }
+
+    .banner-image img {
+        width: 100%;
+    }
+
+    .e-commerce-logo {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .collection-card {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .feature-container {
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+
+    .feature-content,
+    .feature-image {
+        width: 100%;
+    }
+}
