@@ -189,7 +189,7 @@ main {
     color: #5E6366;
 }
 
-.collection-container p {
+.collection-container .more {
     margin-top: 40px;
     text-align: right;
     color: #E02C6D;
