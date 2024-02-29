@@ -301,14 +301,18 @@ main {
 
     .feature-container {
         gap: 50px;
-        /* margin-left: 10px;
-        margin-right: 10px; */
         text-align: center;
     }
 
     .feature-content,
     .feature-image {
         width: 100%;
+    }
+
+    .feature-image img {
+        width: 95%;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     .social-icon .fa-brands {
