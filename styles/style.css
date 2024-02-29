@@ -50,6 +50,10 @@ nav ul li a {
     color: var(--primary-color);
 }
 
+nav .fa-solid {
+    font-size: 2rem;
+}
+
 /* banner section styles */
 .banner-container {
     display: flex;
@@ -81,7 +85,10 @@ nav ul li a {
     padding: 10px 24px;
     border: none;
     margin-top: 16px;
+}
 
+.btn span .fa-solid {
+    padding-left: 15px;
 }
 
 .banner-image {
