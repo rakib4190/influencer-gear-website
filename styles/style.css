@@ -186,6 +186,15 @@ main {
     color: #5E6366;
 }
 
+.collection-container p {
+    margin-top: 40px;
+    text-align: right;
+    color: #E02C6D;
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
 
 
 /* responsive for mobile device */
@@ -229,45 +238,48 @@ main {
         grid-template-columns: repeat(1, 1fr);
         gap: 15px;
     }
-}
 
-/* responsive for tablet device */
-@media screen and (min-width:576px) and (max-width:800px) {
-
-    nav {
-        flex-direction: column;
+    .collection-container p {
+        padding-right: 20px;
     }
 
-    nav .nav-title {
-        margin-bottom: 15px;
-    }
+    /* responsive for tablet device */
+    @media screen and (min-width:576px) and (max-width:800px) {
 
-    .banner-container {
-        flex-direction: column-reverse;
-    }
+        nav {
+            flex-direction: column;
+        }
 
-    .banner-container .banner-image {
-        width: 90%;
-        margin: 0 auto;
+        nav .nav-title {
+            margin-bottom: 15px;
+        }
 
-        margin-top: 20px;
-    }
+        .banner-container {
+            flex-direction: column-reverse;
+        }
 
-    .banner-content {
-        margin-left: 50px;
-    }
+        .banner-container .banner-image {
+            width: 90%;
+            margin: 0 auto;
 
-    .banner-image img {
-        width: 100%;
-    }
+            margin-top: 20px;
+        }
 
-    .e-commerce-logo {
-        flex-wrap: wrap;
-        gap: 20px;
-    }
+        .banner-content {
+            margin-left: 50px;
+        }
 
-    .collection-card {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
+        .banner-image img {
+            width: 100%;
+        }
+
+        .e-commerce-logo {
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .collection-card {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
     }
-}
