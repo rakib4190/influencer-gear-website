@@ -109,8 +109,6 @@ nav .fa-solid {
 
 }
 
-
-
 .up-hr {
 
     height: 1px;
@@ -119,7 +117,74 @@ nav .fa-solid {
     border: none;
 }
 
+/* collection section styles */
+main {
+    max-width: 1250px;
+    margin: 0 auto;
 
+}
+
+.collection-container {
+    margin-top: 100px;
+    margin-bottom: 74px;
+
+}
+
+.collection-container .title {
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 600;
+    padding-bottom: 45px;
+    color: var(--primary-color);
+}
+
+.collection-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    background-color: #FFFFFF;
+
+}
+
+.card {
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    background: #fff;
+    padding: 15px 14px 17px 14px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card .card-title {
+    margin-top: 16px;
+    color: #18191F;
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+.card .price {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #1d1e1e;
+}
+
+.card .rating {
+    color: #5E6366;
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+.card .rating .fa-solid {
+    color: rgba(240, 139, 7, 0.957);
+}
+
+.card .description {
+    font-size: 14px;
+    font-weight: 500;
+    color: #5E6366;
+}
 
 
 
@@ -159,6 +224,11 @@ nav .fa-solid {
         flex-wrap: wrap;
         gap: 20px;
     }
+
+    .collection-card {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+    }
 }
 
 /* responsive for tablet device */
@@ -194,5 +264,10 @@ nav .fa-solid {
     .e-commerce-logo {
         flex-wrap: wrap;
         gap: 20px;
+    }
+
+    .collection-card {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
     }
 }
